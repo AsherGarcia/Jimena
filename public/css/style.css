@@ -1,0 +1,247 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #cde7e6;
+}
+
+.grupo1
+{
+    margin-right: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start; /* Alineación vertical al inicio */
+}
+
+.flex-container 
+{ 
+    margin-left: 70px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start; /* Alineación vertical al inicio */
+}
+
+.btnMenu
+{
+    margin-left: 80px;  
+    margin-top: 250px;
+    width: 200px;
+    height: 200px; /* Ensure full width within the form container */
+    max-width: 200px; /* Limit the maximum width */
+    padding: 20px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 100px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.container1 {
+    background-color: #fff;
+    border: 1px solid #c2c2c2; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra gris */ 
+    padding: 20px 50px;
+    border-radius: 25px;
+    margin-top: 60px;
+    margin-right: 120px;
+    width: auto;
+    height: auto;
+}
+
+
+.container2 {
+    background-color: #fff;
+    border: 1px solid #c2c2c2; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra gris */
+    padding: 30px 50px;
+    border-radius: 25px;
+    margin-left: 60px;
+    margin-top: 60px; /* Asegúrate de que el margen superior sea el mismo para alinearlos verticalmente */
+    width: 450px;
+    height: auto;
+    
+}
+
+.container3 {
+    background-color: #fff;
+    border: 1px solid #c2c2c2; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra gris */ 
+    padding-left:40px;
+    padding-right:40px;
+    padding-top:20px;
+    border-radius: 25px;
+    margin-top: 60px;
+    margin-right: 350px;
+    width: auto;
+    height: auto;
+
+}
+
+
+.container4 {
+    background-color: #fff;
+    border: 1px solid #c2c2c2; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra gris */
+    padding: 30px 50px;
+    border-radius: 25px;
+    margin-left: 300px;
+    margin-top: 60px; /* Asegúrate de que el margen superior sea el mismo para alinearlos verticalmente */
+    width: 450px;
+    height: auto;
+    
+}
+
+.container5 {
+    background-color: #fff;
+    border: 1px solid #c2c2c2; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra gris */ 
+    padding: 20px 50px;
+    border-radius: 25px;
+    margin-top: 60px;
+    margin-right:60px;
+    width: 1000px;
+    height: auto;
+}
+
+
+.container6 {
+    background-color: #fff;
+    border: 1px solid #c2c2c2; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra gris */
+    padding: 30px 50px;
+    border-radius: 25px;
+    margin-right: 20px;
+    margin-left: 50px;
+    margin-top: 60px; /* Asegúrate de que el margen superior sea el mismo para alinearlos verticalmente */
+    width: 450px;
+    height: auto;
+    
+}
+
+
+.container7 {
+    background-color: #fff;
+    border: 1px solid #c2c2c2; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra gris */
+    padding: 30px 50px;
+    border-radius: 25px;
+    margin-left: 35%;
+    margin-right: 50%;
+    margin-top: 60px; /* Asegúrate de que el margen superior sea el mismo para alinearlos verticalmente */
+    width: 300px;
+    height: auto;
+    align-items: center;
+    
+}
+
+table {
+    width: auto; /* Adjusted width to not extend the full width of the page */
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: center;
+    border: 1px solid #555555;
+}
+
+table th, table td {
+    padding: 8px 30px;
+    border: 1px solid #555555;
+    
+}
+
+table th {
+    background-color: #fdfdfd;
+    font-weight: bold;
+    
+}
+
+a {
+    color: #0275d8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+form {
+    margin: 10px 0;
+}
+.btRegresar{
+    background-color: #77899c;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+input[type="text"], select, input[type="number"] {
+    width: 100%; /* Ensure full width within the form container */
+    max-width: 300px; /* Limit the maximum width */
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.btnAccion {
+    width: 100%; /* Ensure full width within the form container */
+    max-width: 200px; /* Limit the maximum width */
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btnAccion:hover {
+    background-color: #1675db;
+}
+
+select {
+    background-color: white;
+    color: #333;
+}
+
+input[type="text"], input[type="number"] {
+    background-color: #f9f9f9;
+}
+
+
+button a {
+    color: inherit;
+  
+}
+
+.btModificar{
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btEliminar{
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #c76565;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
