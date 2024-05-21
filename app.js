@@ -1,8 +1,9 @@
 const bodyParser = require("body-parser");
 const express = require("express");
 const Rutas = require("./js/Rutas/Direcciones.js");
+const {PORT}= require("./config.js");
 
-const puerto = 8888;
+const puerto = PORT;
 const url = 'http://localhost:'+puerto+'/';
 const app = express();
 

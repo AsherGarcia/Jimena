@@ -1,14 +1,16 @@
 const Producto = require("../Clases/Producto.js");
 const Tienda = require("../Clases/Tienda.js");
-const mysql = require("mysql2");
+const mysql = require("mysql2")
+const  {BD_HOST, BD_USER, BD_PASSWORD, BD_NAME, BD_PORT} = require("./../../config.js");
 
 class Crud{
     constructor(){
         this.conexion = mysql.createConnection({
-            host : "localhost",
-            user : "root",
-            password : "n0m3l0",
-            database : "crud"
+            host : BD_HOST,
+            user : BD_USER,
+            password : BD_PASSWORD,
+            database : BD_NAME,
+            port: BD_PORT
         });
         
         this.conexion.connect((err)=>{

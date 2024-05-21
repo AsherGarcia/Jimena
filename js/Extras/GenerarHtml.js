@@ -58,8 +58,6 @@ class Generar{
      
             <p>Para registrar un producto llena los siguientes campos:</p>
             <br>
-            <input type='text' name='boleta' placeholder='Identificador' required>
-            <br>
             <input type='text' name='nombre' placeholder='Nombre del producto' required>
             <br>
             <input type='number' name='edad' placeholder='Piezas disponibles' required>
