@@ -61,11 +61,10 @@ class Controlador{
         let edad = parseInt(req.body.edad);
         let materia = await this.crud.obtenerIdTipo(req.body.materia);
         let grupo = await this.crud.obtenerIdDistribuidora(req.body.grupo);
-        
         try{
             parseInt(edad);
 
-            if(edad > -1 && materia.length > 3 && nombre.length > 0 && grupo.length > 3){
+            if(edad > -1 && materia > 0 && nombre.length > 0 && grupo > 0){
                 await this.crud.agregarTienda(new Tienda(nombre, edad, grupo, materia, 0));
             }
         }        
