@@ -194,11 +194,11 @@ class Generar{
         let gruposDis = "", materiasDis = "";
 
         for(let i = 0; i < grupos.length; i ++){
-            gruposDis += `<option value='${grupos[i]}' ${(grupos[i] === profesor.getGrupo)?"selected":""}>${grupos[i]}</option>`;
+            gruposDis += `<option value='${grupos[i]}' ${(grupos[i] === profesor.getDis)?"selected":""}>${grupos[i]}</option>`;
         }
 
         for(let i = 0; i < materias.length; i ++){
-            materiasDis += `<option value='${materias[i]}' ${(materias[i] === profesor.getMateria)?"selected":""}>${materias[i]}</option>`;
+            materiasDis += `<option value='${materias[i]}' ${(materias[i] === profesor.getTipo)?"selected":""}>${materias[i]}</option>`;
         }
 
         let profe = `<div class='container7'><form action='/modificarT' method='POST'>
@@ -230,7 +230,7 @@ class Generar{
         let gruposDis = "";
 
         for(let i = 0; i < grupos.length; i ++){
-            gruposDis += `<option value='${grupos[i]}' ${(grupos[i] === alumno.getGrupo)?"selected":""}>${grupos[i]}</option>`;
+            gruposDis += `<option value='${grupos[i]}' ${(grupos[i] === alumno.getDis)?"selected":""}>${grupos[i]}</option>`;
         }
 
         let alum = `<div class='container7'><form action='/modificarP' method='POST'>
