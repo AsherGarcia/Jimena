@@ -58,9 +58,9 @@ class Generar{
      
             <p>Para registrar un producto llena los siguientes campos:</p>
             <br>
-            <input type='text' name='nombre' placeholder='Nombre del producto' required>
+            <input type='text' minlength='3' name='nombre' placeholder='Nombre del producto' required>
             <br>
-            <input type='number' name='edad' placeholder='Piezas disponibles' required>
+            <input type='number' min='0' name='edad' placeholder='Piezas disponibles' required>
             <bR>
             <select name='grupo'>
                 ${gruposDis}
@@ -114,9 +114,9 @@ class Generar{
 
         let formulario= `<br><form align='center' action='/ingresarTienda' method='POST'>
             <p>Registra aqui el nombre de la tienda:</p>
-            <input type='text' name='nombre' placeholder='Nombre de la tienda' required>
+            <input type='text' minlength='3' name='nombre' placeholder='Nombre de la tienda' required>
             <br>
-            <input type='number' name='edad' placeholder='Años activa Ej.(1, 0.5medio año)' required>
+            <input type='number' min='0' name='edad' placeholder='Años activa Ej.(1, 0.5medio año)' required>
             <br>
             <select name='grupo' required>
                 ${gruposDis}
@@ -151,7 +151,7 @@ class Generar{
         </table>`;
 
         let formulario = `<p align='center'>Registra las distribuidoras que abastecen a las tiendas:</p><form align='center' action="/ingresarGrupo" method="POST">
-            <input type="text" placeholder='Nombre de la distribuidora' name="grupo" required>
+            <input type="text" minlength='3' placeholder='Nombre de la distribuidora' name="grupo" required>
             <br>
             <input type="submit" class='btnAccion' value="Agregar Distribuidora">
         </form>
@@ -180,9 +180,9 @@ class Generar{
 
         let formulario = `<form align='center' action="/ingresarTipo" method="POST">
             <p>Registra los tipos de tiendas que venden los productos:</p>
-            <input type="text" placeholder='Ej.(abarrotes, ropa)' name="materia" required>
+            <input type="text" minlength='3' placeholder='Ej.(abarrotes, ropa)' name="materia" required>
             <br>
-            <input class='btnAccion'type="submit" value="Agregar tipo de tienda">
+            <input class='btnAccion' type="submit" value="Agregar tipo de tienda">
         </form>
         <br>
         <button class='btRegresar'><a href='index.html'>Regresar</a></button>`;
@@ -205,8 +205,8 @@ class Generar{
         <p>Modifica el registro de la tienda y guarda los cambios</p>
         <input type='hidden' name='id' value='${profesor.getIdentificador}'>
         <p>Nombre de la tienda:</p>
-        <input type='text' name='nombre' value='${profesor.getNombre}'>
-        <input type='hidden' name='edad' value='${profesor.getEdad}'>
+        <input type='text' minlength='3' name='nombre' value='${profesor.getNombre}'>
+        <input type='hidden' min='0' name='edad' value='${profesor.getEdad}'>
         <br>
         <p>Selecciona la distribuidora:</p>
         <select name='grupo'>
@@ -237,10 +237,10 @@ class Generar{
         <p>Modifica los datos del registro del producto y guarda los cambios</p>  
         <input type='hidden' name='boleta' value='${alumno.getId}'>
         <p>Nombre del producto:</p>
-        <input type='text' name='nombre' value='${alumno.getNombre}'>
+        <input type='text' minlength='3' name='nombre' value='${alumno.getNombre}'>
         <br>
         <p>Piezas:</p>
-        <input type='number' name='edad' value='${alumno.getEdad}'>
+        <input type='number' min='0' name='edad' value='${alumno.getEdad}'>
         <br>
         <p>Distribuidora:</p>
         <select name='grupo'>
