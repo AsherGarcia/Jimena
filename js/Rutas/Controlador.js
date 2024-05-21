@@ -156,7 +156,6 @@ class Controlador{
         
         try{
             parseInt(edad);
-
             if(grupo.length > 3 && edad > -1 && nombre.length > 0){
                 await this.crud.actualizarProducto(new Producto(nombre, edad, boleta, grupo));
             }

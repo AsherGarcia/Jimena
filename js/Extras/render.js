@@ -235,7 +235,7 @@ class Generar{
 
         let alum = `<div class='container7'><form action='/modificarP' method='POST'>
         <p>Modifica los datos del registro del producto y guarda los cambios</p>  
-        <input type='hidden' name='boleta' value='${alumno.getBoleta}'>
+        <input type='hidden' name='boleta' value='${alumno.getId}'>
         <p>Nombre del producto:</p>
         <input type='text' name='nombre' value='${alumno.getNombre}'>
         <br>
