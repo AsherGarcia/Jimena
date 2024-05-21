@@ -262,6 +262,7 @@ class Generar{
             fichas += `<tr>
                 <td>${horarios[i].nProfesor}</td>
                 <td>${horarios[i].materia}</td>
+                <td>${horarios[i].grupo}</td>
             </tr>`;
         }
 
@@ -269,6 +270,7 @@ class Generar{
             <tr>
                 <td>Tienda</td>
                 <td>Tipo de tienda</td>
+                <td>Distribuidora</td>
             </tr>
             ${fichas}
         </table>
