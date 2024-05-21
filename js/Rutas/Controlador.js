@@ -147,7 +147,7 @@ class Controlador{
 
         res.redirect("/obtenerTiendas");
     }
-
+ 
     async modificarP(req, res){
         let boleta = req.body.boleta;
         let nombre = req.body.nombre;
