@@ -250,7 +250,7 @@ class Generar{
         <input type='submit' class='btModificar' value='Modificar'>
         </form>
         <br>
-        <button class="btregresar"><a href='/obtenerAlumnos'>Regresar</a></button></div>`;
+        <button class="btregresar"><a href='/obtenerProductos'>Regresar</a></button></div>`;
 
         return this.generarEstructuraHtml(alum);
     }
